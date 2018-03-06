@@ -30,7 +30,7 @@ module Bitfinex
     # @example:
     #   client.fees
     def fees
-      resp = authenticated_post("fees")
+      resp = authenticated_post("account_fees")
       resp.body
     end
   end
